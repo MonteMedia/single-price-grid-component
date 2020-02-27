@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 431px 431px;
+  grid-template-rows: 295px 355px;
+  margin: 50px 0 50px 0;
+}
+
+.panel {
+  text-align: left;
+  position: relative;
+}
+
+.join {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 0 49px 0 49px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sub {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 0 45px 0 45px;
+  color: #FFFAFA;
+  background: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+}
+
+.why {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 0 45px 0 45px;
+  background: rgba(42, 178, 175, 0.8);
+  color: rgba(255, 250, 250, 0.8);
+  border-bottom-right-radius: 10px;
+}
+
+.join h1 {
+  padding-top: 32px;
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.join h2 {
+  padding-top: 10px;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.join p {
+  color: rgb(190, 192, 196);
+  line-height: 1.5;
+  padding-right: 50px;
+  font-size: 21.4px;
+}
+
+.sub h1 {
+  padding-top: 37px;
+  font-size: 25px;
+}
+
+.sub h4 {
+  font-size: 45px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.sub .permonth {
+  font-size: 20px;
+  padding-left: 10px;
+  display: inline-block;
+  transform: translate(0, -35%);
+  color: hsla(179, 55%, 71%, 0.78);
+}
+
+.sub p {
+  font-size: 22px;
+  margin-top: 17px;
+}
+
+.sub button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: 329px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font: 900 20px karla;
+  margin: 20px 0 20px 0;
+}
+
+.sub button:hover {
+  background-color: hsl(179, 52%, 65%);
+}
+
+.why h1 {
+  padding-top: 37px;
+  font-size: 25px;
+}
+
+.why .whyuslist {
+  list-style: none;
+  padding-left: 0;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 870px) {
+
+  .container {
+    align-items: center;
+    grid-template-columns: 375px;
+    grid-template-rows: 340px 330px 330px;
+  }
+
+  .join {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0 30px 0 30px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 340px;
+  }
+
+  .sub {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 30px 0 30px;
+    color: #FFFAFA;
+    background: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 0;
+    height: 330px;
+  }
+
+  .why {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0 45px 0 45px;
+    background: rgba(42, 178, 175, 0.8);
+    color: rgba(255, 250, 250, 0.8);
+    border-radius: 0 0 10px 10px;
+    padding: 0 30px 0 30px;
+    height: 330px;
+  }
+
+  .join h1 {
+    padding-top: 15px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .join h2 {
+    padding-top: 10px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.2rem;
+
+  }
+
+  .join p {
+    color: rgb(190, 192, 196);
+    line-height: 2;
+    padding: 10px 0 0 0;
+    font-size: 16px;
+  }
+
+  .sub h1 {
+    padding-top: 20px;
+  }
+
+  .sub p {
+    font-size: 21px;
+  }
+
+.sub button {
+  width: 316px;
+}
+
+  .why h1 {
+    padding-top: 20px;
+  }
+
+  .why .whyuslist {
+    padding-top: 10px;
+  }
+}
